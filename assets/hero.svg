@@ -1,0 +1,56 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Monah Al Ghadban — Cloud DevOps Engineer. AWS, Google Cloud, Terraform, Kubernetes.">
+  <style>
+    .sans { font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: 'Cascadia Code', 'SF Mono', Consolas, Menlo, monospace; }
+    .fade { animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+    .d1 { animation-delay: 0.1s; }
+    .d2 { animation-delay: 0.3s; }
+    .d3 { animation-delay: 0.5s; }
+    .d4 { animation-delay: 0.7s; }
+    .d5 { animation-delay: 0.9s; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    
+    .glow { animation: drift 18s ease-in-out infinite alternate; }
+    @keyframes drift { from { transform: translate(0, 0); } to { transform: translate(-60px, 24px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .fade, .glow { animation: none !important; }
+    }
+  </style>
+  <defs>
+    <clipPath id="frame"><rect x="0" y="0" width="900" height="280" rx="16"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#0e1628"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="0.5" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#14b8a6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#1e2a44"/>
+    </pattern>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="900" height="280" fill="url(#bg)"/>
+    <rect width="900" height="280" fill="url(#grid)"/>
+    <ellipse class="glow" cx="450" cy="150" rx="340" ry="180" fill="url(#halo)"/>
+    <rect x="0" y="0" width="900" height="3" fill="url(#accent)"/>
+
+    <!-- Identity, centred -->
+    <text class="mono fade d1" x="450" y="94" text-anchor="middle" font-size="14" fill="#14b8a6">~/monahgh $ whoami</text>
+    <text class="sans fade d2" x="450" y="146" text-anchor="middle" font-size="44" font-weight="700" fill="#f3f6fb">Monah Al Ghadban</text>
+    <text class="sans fade d3" x="450" y="184" text-anchor="middle" font-size="22" font-weight="600" fill="url(#accent)">Cloud DevOps Engineer</text>
+    <text class="mono fade d4" x="450" y="222" text-anchor="middle" font-size="14" fill="#93a4c3">AWS · Google Cloud · Terraform · Kubernetes</text>
+
+  </g>
+  <rect x="0.5" y="0.5" width="899" height="279" rx="16" fill="none" stroke="#1e2a44"/>
+</svg>
